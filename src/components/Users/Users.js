@@ -39,7 +39,7 @@ const Users = (props) => {
     setError(null);
   };
   return (
-    <div>
+    <React.Fragment>
       {error && (
         <ErrorModal
           title={error.title}
@@ -66,7 +66,7 @@ const Users = (props) => {
           <Button type="submit">Add User</Button>
         </form>
       </Card>
-    </div>
+    </React.Fragment>
   );
 };
 export default Users;
